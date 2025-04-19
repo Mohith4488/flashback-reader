@@ -1,0 +1,126 @@
+/* FlashbackPage.css */
+.flashback-container {
+  padding: 3rem 2rem;
+  font-family: 'Courier New', monospace;
+  background: #FCE2DB; /* Soft peachy background */
+  color: #2C3E50; /* Off-black text for readability */
+  box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
+}
+
+.year-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  color: #6A3E2A; /* Dark warm brown for titles */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.flashback-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  margin-top: 2rem;
+}
+
+.card {
+  background: linear-gradient(135deg, #FFB88C, #FF6A13); /* Warm gradient background for cards */
+  padding: 2rem;
+  width: 300px;
+  max-width: 350px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #FF7F50, #FF4500); /* Bolder gradient on hover */
+}
+
+.card-title {
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+  color: #6A3E2A; /* Matching card title color with the background */
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-content {
+  list-style-type: square;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+.card-content li {
+  margin: 0.8rem 0;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.back-btn {
+  background-color: #FF6347; /* Bold coral for the back button */
+  color: #fff7e6;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 2rem;
+  text-align: center;
+  display: block;
+  width: 200px;
+  margin: 1rem auto;
+}
+
+.back-btn:hover {
+  background-color: #FF4500; /* Darker coral on hover */
+  transform: translateY(-5px);
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flashback-cards {
+      gap: 1.5rem;
+  }
+
+  .card {
+      width: 90%;
+      margin-bottom: 1rem;
+  }
+
+  .back-btn {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .year-title {
+      font-size: 2.5rem;
+  }
+
+  .card-title {
+      font-size: 1.5rem;
+  }
+
+  .card-content li {
+      font-size: 1rem;
+  }
+}
