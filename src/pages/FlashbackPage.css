@@ -1,9 +1,9 @@
-/* FlashbackPage.css */
+ 
 .flashback-container {
   padding: 3rem 2rem;
   font-family: 'Courier New', monospace;
-  background: #FCE2DB; /* Soft peachy background */
-  color: #2C3E50; /* Off-black text for readability */
+  background: #FCE2DB; 
+  color: #2C3E50; 
   box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.1);
   min-height: 100vh;
 }
@@ -13,7 +13,7 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2.5rem;
-  color: #6A3E2A; /* Dark warm brown for titles */
+  color: #6A3E2A;  
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -28,7 +28,7 @@
 }
 
 .card {
-  background: linear-gradient(135deg, #FFB88C, #FF6A13); /* Warm gradient background for cards */
+  background: linear-gradient(135deg, #FFB88C, #FF6A13);  
   padding: 2rem;
   width: 300px;
   max-width: 350px;
@@ -43,13 +43,13 @@
 .card:hover {
   transform: translateY(-12px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(135deg, #FF7F50, #FF4500); /* Bolder gradient on hover */
+  background: linear-gradient(135deg, #FF7F50, #FF4500);  
 }
 
 .card-title {
   font-size: 1.75rem;
   margin-bottom: 1.25rem;
-  color: #6A3E2A; /* Matching card title color with the background */
+  color: #6A3E2A; 
   font-weight: bold;
   text-align: center;
 }
@@ -68,7 +68,7 @@
 }
 
 .back-btn {
-  background-color: #FF6347; /* Bold coral for the back button */
+  background-color: #FF6347;  
   color: #fff7e6;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -84,7 +84,7 @@
 }
 
 .back-btn:hover {
-  background-color: #FF4500; /* Darker coral on hover */
+  background-color: #FF4500;  
   transform: translateY(-5px);
 }
 
@@ -95,8 +95,7 @@
   min-height: 100vh;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .flashback-cards {
       gap: 1.5rem;
   }

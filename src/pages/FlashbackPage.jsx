@@ -14,26 +14,24 @@ function FlashbackPage() {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // NewsData.io API key
+   
   const NEWS_API_KEY = 'pub_816053ffa259fab4f3046f61f5a96b9bbdae7';
 
   useEffect(() => {
     async function fetchData() {
       try {
-        // Wikipedia summary
+       
         const wikipediaResponse = await axios.get(
           `https://en.wikipedia.org/api/rest_v1/page/summary/${selectedYear}`
         );
         setYearData(wikipediaResponse.data);
 
-        // Google Books
-        const booksResponse = await axios.get(
+         const booksResponse = await axios.get(
           `https://www.googleapis.com/books/v1/volumes?q=${selectedYear}`
         );
         setBooks(booksResponse.data.items || []);
 
-        // NewsData.io - Fetching Indian news for the year
-        const newsResponse = await axios.get(
+         const newsResponse = await axios.get(
           `https://newsdata.io/api/1/news?apikey=${NEWS_API_KEY}&q=India%20${selectedYear}&country=in&language=en`
         );
         setNews(newsResponse.data.results || []);

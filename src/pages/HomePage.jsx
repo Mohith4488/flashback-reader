@@ -1,7 +1,7 @@
-// src/pages/HomePage.jsx
+ 
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './HomePage.css'; // Optional, or keep styling in App.css
+import './HomePage.css';  
 
 function HomePage() {
   const [year, setYear] = useState('');
